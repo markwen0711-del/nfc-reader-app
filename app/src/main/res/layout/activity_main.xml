@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 放在 res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請將卡片靠近手機背面感應區"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvCardType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卡片類型: --"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UID (十六進位 HEX):"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvHex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:text="--"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="十進位 (Big-Endian, 正序):"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvDecBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:text="--"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="十進位 (Little-Endian, 反序, 常見門禁卡格式):"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvDecLittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:text="--"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATQA / SAK / 其他資訊:"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="--" />
+
+</LinearLayout>
